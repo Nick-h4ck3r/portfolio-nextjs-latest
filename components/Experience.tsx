@@ -17,10 +17,11 @@ export default function Experience({}: Props) {
       </h3>
 
       <div className="w-full mt-20 flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-track-transparent scrollbar-thumb-slate-500/20 scrollbar-thin xl:space-x-14 ">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+        <ExperienceCard clogo="/companyLogo/github-white.png" title="Open-source contributor" company="GitHub" />
+        <ExperienceCard clogo="/companyLogo/lhc.jpeg" title="Founder and Creator" company="localhostcoders community"/>
+        <ExperienceCard clogo="/companyLogo/wemakedevs.jpeg" title="Core team member" company="WeMakeDevs community" />
+        <ExperienceCard clogo="/companyLogo/jkiapt.jpeg" title="Placement co-ordinator" company="Training and Placement Cell, JKIAPT" />
+        
       </div>
     </motion.div>
   );

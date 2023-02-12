@@ -81,8 +81,8 @@ export default function Contact({}: Props) {
         </form> */}
       </div>
 
-      <div className="text-sm bottom-5 items-center justify-center absolute">
-          <p>Website design and developed by Nickk!</p>
+      <div className="text-sm bottom-20 items-center justify-center absolute">
+          <p>Website design and developed by <span className="underline decoration-blue-400">Nickk!</span> </p>
         </div>
     </div>
   );
