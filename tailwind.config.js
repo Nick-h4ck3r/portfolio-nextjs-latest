@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
+      },
+
+    },
   },
   plugins: [require("tailwind-scrollbar")],
 };

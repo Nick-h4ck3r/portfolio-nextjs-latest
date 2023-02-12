@@ -20,15 +20,15 @@ export default function Contact({}: Props) {
 
   return (
     <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          Let&apos;s get in touch!
+        <h4 className="text-4xl font-semibold text-center font-poppins">
+          reach me on socials.
         </h4>
 
-        <div className="space-y-7 flex flex-col items-center">
+        {/* <div className="space-y-7 flex flex-col items-center">
           <div className="flex items-center space-x-5">
             <PhoneIcon className=" text-gray-400 h-6 w-6 hover:animate-pulse " />
             <p className="text-xl">+91*********</p>
@@ -43,9 +43,11 @@ export default function Contact({}: Props) {
             <MapPinIcon className=" text-gray-400 h-6 w-6 hover:animate-pulse " />
             <p className="text-xl">Prayagraj, India.</p>
           </div>
-        </div>
+        </div> */}
 
-        <form
+        
+
+        {/* <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col space-y-2 w-fit mx-auto"
         >
@@ -76,8 +78,12 @@ export default function Contact({}: Props) {
             className="contactInput"
           />
           <button className="contactButton">Send</button>
-        </form>
+        </form> */}
       </div>
+
+      <div className="text-sm bottom-5 items-center justify-center absolute">
+          <p>Website design and developed by Nickk!</p>
+        </div>
     </div>
   );
 }

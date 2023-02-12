@@ -8,20 +8,20 @@ type Props = {};
 
 export default function ExperienceCard({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[450px] xl:w-[500px]  snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[450px] xl:w-[500px]  snap-center backdrop-blur-sm bg-white/5 p-10 transition-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        src={imgURL}
-        className="h-32 w-32 rounded-full xl object-center object-cover xl:w-[150px] xl:h-[150px]"
+        src="/skillsLogos/github.png"
+        className="bg-white object-cover h-28 w-28 rounded-full xl object-center xl:w-[150px] xl:h-[150px]"
         alt=""
       />
 
       <div className="px-0 md:px-10 text-left">
-        <h4 className="text-2xl font-bold">CEO of ABC</h4>
-        <p className="font-semibold text-md mt-1">ABC</p>
+        <h4 className="text-xl font-semibold">open-source contributor</h4>
+        <p className="font-bold text-md mt-2 text-gray-300">GitHub</p>
 
         <div className="flex space-x-2 my-2">
           <img src={imgURL} className=" w-10 h-10 rounded-full" alt="" />

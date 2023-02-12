@@ -16,11 +16,11 @@ export default function Skill({ directionLeft }: Props) {
         className="rounded-full border border-gray-400 p-2 h-16 w-16 object-cover md:w-20 md:h-20 filter group-hover:grayscale group-hover:border-white transition duration-500 ease-in-out"
         alt=""
       />
-      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-500 ease-in-out group-hover:bg-white h-16 w-16 md:w-20 md:h-20 rounded-full z-0">
+      {/* <div className="absolute opacity-0 group-hover:opacity-80 transition duration-500 ease-in-out group-hover:bg-white h-16 w-16 md:w-20 md:h-20 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
             <p className="text-2xl md:text-3xl font-bold text-black opacity-100">100%</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
