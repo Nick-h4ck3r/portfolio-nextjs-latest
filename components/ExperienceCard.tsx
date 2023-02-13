@@ -1,18 +1,27 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-const imgURL =
-  "https://cdn.hashnode.com/res/hashnode/image/upload/v1671209654236/2TRB5sdiZ.png?w=500&h=500&fit=crop&crop=faces&auto=compress";
-
 type Props = {
   clogo: string;
   title: string;
   company: string;
+  point1?: string;
+  point2?: string;
+  startDate: string;
+  endDate: string;
 };
 
-export default function ExperienceCard({ clogo, title, company }: Props) {
+export default function ExperienceCard({
+  clogo,
+  title,
+  company,
+  point1,
+  point2,
+  startDate,
+  endDate,
+}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[450px] xl:w-[500px]  snap-center backdrop-blur-sm bg-white/5 p-10 transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[450px] xl:w-[500px]  snap-center backdrop-blur-sm bg-white/5 p-10 transition-opacity duration-200 overflow-hidden py-14 mt-10">
       <motion.img
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
@@ -34,13 +43,12 @@ export default function ExperienceCard({ clogo, title, company }: Props) {
           <img src={imgURL} className=" w-10 h-10 rounded-full" alt="" />
         </div> */}
 
-        <p className="uppercase py-2 text-sm text-gray-300">2019 - 2020</p>
+        <p className="uppercase py-2 text-sm text-gray-300 mt-2">{startDate} - {endDate}</p>
 
-        <ul className="list-disc space-y-2 ml-5 text-md">
-          <li>points</li>
-          <li>points</li>
-          <li>points</li>
-          <li>points</li>
+        <ul className="list-disc space-y-3 ml-5 text-md mt-3 font-poppins">
+          <li>{point1}</li>
+
+          <li>{point2}</li>
         </ul>
       </div>
     </article>
