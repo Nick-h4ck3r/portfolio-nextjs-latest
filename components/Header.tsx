@@ -87,7 +87,7 @@ export default function Header({}: Props) {
           url="#contact"
         />
         <p className="hidden md:inline-flex text-sm text-white">
-          <a href="#contact"> Get in touch </a>
+          <a href="#contact" rel="noreferrer"> Get in touch </a>
         </p>
       </motion.div>
     </header>
