@@ -34,6 +34,9 @@ export default function About({}: Props) {
           duration: 1.2,
           ease: "easeInOut",
         }}
+        viewport={{
+          once: true,
+        }}
         src="/profilePic.jpg"
         className="-mb-32 md:mb-0 md:ml-16 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]"
       />

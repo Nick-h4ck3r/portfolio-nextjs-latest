@@ -29,7 +29,7 @@ export default function Contact({}: Props) {
           <span className="underline decoration-blue-600">socials.</span>
           
         </h4>
-        <h5> <p className="text-xl font-md font-poppins text-gray-200"> or drop a mail at nickkadam23@gmail.com </p></h5>
+        <h5> <p className="text-xl font-md font-poppins text-gray-200 md:ml-5"> or drop a mail at nickkadam23@gmail.com </p></h5>
 
         {/* <div className="space-y-7 flex flex-col items-center">
           <div className="flex items-center space-x-5">
