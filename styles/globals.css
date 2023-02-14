@@ -5,7 +5,7 @@
 
 @layer components {
   .heroButton {
-    @apply text-sm bg-transparent text-gray-400 border border-[#454545] mr-3 mt-3 font-bold py-2 px-5 rounded-full hover:text-white hover:border-[white] hover:duration-1000;
+    @apply text-sm bg-transparent text-gray-400 border border-blue-400/10 mr-3 mt-3 font-bold py-2 px-5 rounded-full hover:text-white hover:border-[white] hover:duration-1000;
   }
   .contactInput {
     @apply outline-none bg-slate-400/10 rounded-md px-3 py-2 text-gray-400 focus:text-white;
