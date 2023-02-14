@@ -1,0 +1,30 @@
+{
+  "data": {
+    "data": [
+      {
+        "id": 1,
+        "title": "NFT Preview Card Component",
+        "content": "The NFT Preview card component UI was created entirely with HTML and CSS.",
+        "imgurl": "/projectSS/nft-card-new.png"
+      },
+      {
+        "id": 2,
+        "title": "QR Code Component",
+        "content": "QR code component created solely with HTML and CSS. The user interface was designed in a stylish, modern look.",
+        "imgurl": "/projectSS/qr-code.png"
+      },
+      {
+        "id": 3,
+        "title": "MovieSpace",
+        "content": "The MovieSpace website was built using ReactJS, which uses IMDB API to fetch using a search query using user input. reactjs and imdb api to fetch data and display results.",
+        "imgurl": "/projectSS/moviespace.png"
+      },
+      {
+        "id": 4,
+        "title": "Portfolio",
+        "content": "Nexts was used to create the portfolio website. TailwindCSS and Framer motion were used to style the website. Sanity is utilised as a content management system.",
+        "imgurl": "/projectSS/portfolio.png"
+      }
+    ]
+  }
+}

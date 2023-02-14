@@ -7,7 +7,9 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
-export default function Home() {
+
+export default function Home({ data }: any) {
+  console.log(data);
   return (
     <div id="mainBody" className="bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-transparent scrollbar-thumb-slate-500/20 scrollbar-thin">
       <Head>
@@ -42,7 +44,7 @@ export default function Home() {
 
       {/* Projects */}
       <section id="projects" className="snap-center">
-        <Projects />
+        <Projects data={data.data} />
       </section>
 
       {/* Contact */}
@@ -51,4 +53,19 @@ export default function Home() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const fs = require("fs/promises");
+  const path = require("path");
+  const filePath = path.join(process.cwd(), "/data", "/data.json");
+
+  var data = await fs.readFile(filePath)
+  data = JSON.parse(data)
+
+  return {
+    props: {
+      data: data.data,
+    },
+  };
 }

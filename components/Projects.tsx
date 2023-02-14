@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-type Props = {};
+type Props = {
+  data: Array<any>;
+};
 
-export default function Projects({}: Props) {
-  const projects = [1, 2, 3, 4, 5];
+export default function Projects({ data }: Props) {
+  const projects = [1,2,3,4,5];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,7 +19,7 @@ export default function Projects({}: Props) {
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scroll-smooth scrollbar-track-transparent scrollbar-thumb-slate-500/20 scrollbar-thin">
-        {projects.map((project, i) => (
+        {data.map((project: any, i: any) => (
           <div
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen mt-10"
@@ -28,20 +30,17 @@ export default function Projects({}: Props) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="w-[300px]"
-              src="https://media.istockphoto.com/id/520619396/photo/isolated-shot-of-opened-blank-cardboard-box-on-white-background.jpg?s=612x612&w=0&k=20&c=SEWCBNgOWaQH-sBqq5UnmXXFxhpMPdS9btt6MqX-85c="
+              src={project.imgurl}
               alt=""
             />
 
             <div className="px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl text-center mt-7 font-semibold">
-                Project {i + 1}: ABC
+                {project.title}
               </h4>
 
               <p className="text-sm text-center md:text-lg md:text-left mt-7 px-7">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem dolor id velit laudantium dolores quas.
-                Perferendis vel, dolore eligendi quidem, omnis cupiditate at,
-                sit veniam tempore velit laborum ducimus sequi?
+                {project.content}
               </p>
             </div>
           </div>
