@@ -43,11 +43,7 @@ export default function About({}: Props) {
           $: /whoami
         </h4>
         <p className="text-sm md:text-base lg:text-lg px-7 pt-5">
-          I am a Undergraduate student pursuing B.Tech. in Computer Science and
-          Engineering at JK Institute of Applied Physics and Technology,
-          University of Allahabad, Prayagraj, Uttar Pradesh. <br />
-          <br /> Please feel free to get in touch with me if you are interested
-          in connecting.
+        I am a B.tech student in Computer Science and Engineering graduating in '24. <br /> I am a full stack web developer mastering nextjs, tailwind, nodejs, and other technologies. <br /><br />I like to publish blogs about DevOps, Javascript, and web development in general. <br /> I enjoy contributing to open source and involving in communities.
         </p>
       </div>
     </motion.div>

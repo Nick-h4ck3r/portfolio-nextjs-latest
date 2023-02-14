@@ -12,9 +12,9 @@ export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
       "Hey, Nikhil Kadam here.",
-      "I'm a developer.",
-      "I'm a creator.",
-      "I'm an engineer.",
+      "I build things for the web.",
+      "I create content for community.",
+      "I learn new things everyday.",
     ],
     loop: true,
     delaySpeed: 1000,
@@ -30,7 +30,7 @@ export default function Hero({}: Props) {
 
       <div className="z-20">
         <h2 className="text-sm text-gray-400 uppercase tracking-[8px] md:tracking-[15px] pb-2">
-          Software Engineer
+          Full Stack Developer
         </h2>
         <h1 className="pt-2 text-3xl md:text-4xl lg:text-6xl font-semibold px-16">
           <span className="mr-3">{text}</span>
