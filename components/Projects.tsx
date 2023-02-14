@@ -6,7 +6,7 @@ type Props = {
 };
 
 export default function Projects({ data }: Props) {
-  const projects = [1,2,3,4,5];
+  const projects = [1, 2, 3, 4, 5];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,24 +22,26 @@ export default function Projects({ data }: Props) {
         {data.map((project: any, i: any) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen mt-10"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-24"
           >
             <motion.img
               initial={{ opacity: 0, y: -100 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="w-[300px]"
+              className="w-[400px] md:w-[600px]"
               src={project.imgurl}
               alt=""
             />
 
-            <div className="px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl text-center mt-7 font-semibold">
+            <div className="px-0 md:px-10 max-w-6xl pt-7">
+            
+
+              <h4 className="text-2xl text-center mt-5 font-semibold md:text-4xl">
                 {project.title}
               </h4>
 
-              <p className="text-sm text-center md:text-lg md:text-left mt-7 px-7">
+              <p className="text-sm text-center md:text-lg md:text-left pt-7 px-7">
                 {project.content}
               </p>
             </div>
@@ -47,7 +49,7 @@ export default function Projects({ data }: Props) {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#f7ab0a]/10 left-0 h-[500px] -skew-y-12"></div>
+      <div className="w-full absolute top-[27%] bg-gradient-to-r from-blue-500 opacity-30 left-0 h-[500px] -skew-y-12"></div>
     </motion.div>
   );
 }

@@ -14,7 +14,7 @@ export default function Skill({ imgsrc, directionLeft }: Props) {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
         src={imgsrc}
-        className="bg-white rounded-full border border-gray-400 p-2 h-16 w-16 object-cover md:w-20 md:h-20 filter group-hover:grayscale group-hover:border-white transition duration-500 ease-in-out"
+        className="bg-white rounded-full border border-gray-400 p-2 h-16 w-16 object-cover md:w-20 md:h-20 filter group-hover:grayscale group-hover:border-white transition duration-500"
         alt=""
       />
       {/* <div className="absolute opacity-0 group-hover:opacity-80 transition duration-500 ease-in-out group-hover:bg-white h-16 w-16 md:w-20 md:h-20 rounded-full z-0">

@@ -25,7 +25,8 @@ export default function Contact({}: Props) {
       </h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center font-poppins">
-          reach me on socials.
+          reach me on{" "}
+          <span className="underline decoration-blue-600">socials.</span>
         </h4>
 
         {/* <div className="space-y-7 flex flex-col items-center">
@@ -44,8 +45,6 @@ export default function Contact({}: Props) {
             <p className="text-xl">Prayagraj, India.</p>
           </div>
         </div> */}
-
-        
 
         {/* <form
           onSubmit={handleSubmit(onSubmit)}
@@ -81,9 +80,15 @@ export default function Contact({}: Props) {
         </form> */}
       </div>
 
-      <div className="text-sm bottom-20 items-center justify-center absolute">
-          <p>Website design and developed by <span className="underline decoration-blue-400">Nickk!</span> </p>
-        </div>
+      <div className="text-sm bottom-16 items-center justify-center absolute">
+        <p>
+          Website design and developed by{" "}
+          <a target={"_blank"} href="https://twitter.com/NickK2305">
+            Nikhil
+          </a>
+          .
+        </p>
+      </div>
     </div>
   );
 }

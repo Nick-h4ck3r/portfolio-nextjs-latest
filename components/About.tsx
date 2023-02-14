@@ -38,11 +38,11 @@ export default function About({}: Props) {
         className="-mb-32 md:mb-0 md:ml-16 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]"
       />
 
-      <div className="space-y-10 px-0 md:px-20">
-        <h4 className="text-4xl font-semibold -mt-5 font-poppins lg:ml-6 md:ml-6">
+      <div className="px-0 md:px-20">
+        <h4 className="text-4xl font-semibold mt-5 font-poppins lg:ml-6 md:ml-6">
           $: /whoami
         </h4>
-        <p className="text-sm md:text-base lg:text-lg px-7">
+        <p className="text-sm md:text-base lg:text-lg px-7 pt-5">
           I am a Undergraduate student pursuing B.Tech. in Computer Science and
           Engineering at JK Institute of Applied Physics and Technology,
           University of Allahabad, Prayagraj, Uttar Pradesh. <br />
