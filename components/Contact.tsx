@@ -27,9 +27,14 @@ export default function Contact({}: Props) {
         <h4 className="text-4xl font-semibold text-center font-poppins">
           reach me out on{" "}
           <span className="underline decoration-blue-600">socials.</span>
-          
         </h4>
-        <h5> <p className="text-xl font-md font-poppins text-gray-200 md:ml-5"> or drop a mail at nickkadam23@gmail.com </p></h5>
+        <h5>
+          {" "}
+          <p className="text-xl font-md font-poppins text-gray-200 md:ml-5">
+            {" "}
+            or drop a mail at nickkadam23@gmail.com{" "}
+          </p>
+        </h5>
 
         {/* <div className="space-y-7 flex flex-col items-center">
           <div className="flex items-center space-x-5">
@@ -82,16 +87,23 @@ export default function Contact({}: Props) {
         </form> */}
       </div>
 
-      <div className="text-sm bottom-16 items-center justify-center absolute">
+      <div className="text-sm bottom-16 items-center justify-center absolute flex">
         <p>
           Website design and developed by{" "}
-          <a target={"_blank"} href="https://twitter.com/NickK2305" rel="noreferrer">
+          <span className="underline decoration-blue-400">
+          <a
+            target={"_blank"}
+            href="https://twitter.com/NickK2305"
+            rel="noreferrer"
+          >
             Nikhil
           </a>
           .
+          </span>
         </p>
-
-        
+        <div className="">
+          <img src="/up-right-arrow-bold.png" className="w-5 border border-transparent -rotate-6" alt="" />
+        </div>
       </div>
     </div>
   );

@@ -42,11 +42,19 @@ export default function About({}: Props) {
       />
 
       <div className="px-0 md:px-20">
-        <h4 className="text-4xl font-semibold mt-5 font-poppins lg:ml-6 md:ml-6">
+        <h4 className="text-4xl font-semibold mt-8 font-poppins lg:ml-6 md:ml-6">
           $: /whoami
         </h4>
-        <p className="text-sm md:text-base lg:text-lg px-7 pt-5">
-        I am a B.tech student in Computer Science and Engineering graduating in &apos;24. <br /> I am a full stack web developer mastering nextjs, tailwind, nodejs, and other technologies. <br /><br />I like to publish blogs about DevOps, Javascript, and web development in general. <br /> I enjoy contributing to open source and involving in communities.
+        <p className="text-sm md:text-base lg:text-lg px-7 pt-3">
+          Welcome to my digital abode! <br />
+          <br /> I am a <span className="text-blue-500 font-semibold">full stack developer</span> with a passion for building
+          scalable and user-friendly web applications. I love to create
+          elegant solutions to complex problems.
+
+          <br /><br />I am also the founder of <span className="text-blue-500 font-semibold"><a href="https://instagram.com/localhostcoders" target={"_blank"} rel="noreferrer">localhostcoders</a></span>, a community dedicated to empowering aspiring developers.
+          <br /> <br /> Alongside my tech endeavors, I am an avid reader and
+          enjoy delving into subjects such as psychology and philosophy while enjoying a <span className="text-blue-500 font-semibold">fresh cup of
+          coffee!</span>
         </p>
       </div>
     </motion.div>

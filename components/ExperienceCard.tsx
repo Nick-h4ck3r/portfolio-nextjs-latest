@@ -21,7 +21,7 @@ export default function ExperienceCard({
   endDate,
 }: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[450px] xl:w-[500px]  snap-center backdrop-blur-sm bg-white/5 p-10 transition-opacity duration-200 overflow-hidden py-14 mt-10">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[330px] md:w-[450px] xl:w-[500px] snap-center backdrop-blur-sm bg-white/10 p-10 transition-opacity duration-200 overflow-hidden py-14 mt-10">
       <motion.img
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
@@ -43,7 +43,9 @@ export default function ExperienceCard({
           <img src={imgURL} className=" w-10 h-10 rounded-full" alt="" />
         </div> */}
 
-        <p className="uppercase py-2 text-sm text-gray-300 mt-2">{startDate} - {endDate}</p>
+        <p className="uppercase py-2 text-sm text-gray-300 mt-2">
+          {startDate} - {endDate}
+        </p>
 
         <ul className="list-disc space-y-3 ml-5 text-md mt-3 font-poppins">
           <li>{point1}</li>

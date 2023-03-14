@@ -24,6 +24,12 @@
         "title": "Portfolio",
         "content": "Nexts was used to create the portfolio website. TailwindCSS and Framer motion were used to style the website. Sanity is utilised as a content management system.",
         "imgurl": "/projectSS/portfolio.png"
+      },
+      {
+        "id": 5,
+        "title": "Estatery",
+        "content": "Estatery is a real estate website that was built using NextJS, TailwindCSS, and Sanity. The website is fully responsive and mobile friendly.",
+        "imgurl": "/projectSS/estatery-new.png"
       }
     ]
   }
