@@ -1,38 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio - Nikhil Kadam
 
-## Getting Started
+This is a portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Next.js](https://nextjs.org/) -  A React-based web framework for building server-side rendering and static websites.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [Framer Motion](https://www.framer.com/motion/) - A production-ready animation library for React that makes it easy to create fluid and interactive UIs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository to your local machine by running the following command in your terminal:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    ```bash
+    git clone https://github.com/Nick-h4ck3r/portfolio-nextjs-latest.git
+    ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. Change into the project directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    cd portfolio-nextjs-latest
+    ```
 
-## Learn More
+3. Install the dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Run the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+5. Open <http://localhost:3000> in your browser to see the website.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To customize the Portfolio website for your own use, follow these steps:
+
+1. Edit the `data/data.json` file with your own project information.
+2. Edit the `components/About.tsx` file with your own information.
+3. Edit the `components/Experience.tsx` file with your own information.
+4. Edit the `components/Skills.tsx` file with your own information.
+5. Edit the `components/Contact.tsx` file with your own information.
+6. Replace the links in `components/Header.tsx` file with your own social links.
+
+Feel free to experiment and customize the project to your liking.
+
+Don't be afraid to try out different effects and animations in Framer Motion or change the colors in the website using Tailwind CSS.
+
+Have fun!
+
+## Screenshots and Demo
+
+**Hero section:**
+
+![Hero section](/public/screenshots/portfolio/heroDemo.png)
+
+**About section:**
+
+![About section](/public/screenshots/portfolio/aboutDemo.png)
+
+**Experience section:**
+
+![Experience section](/public/screenshots/portfolio/experienceDemo.png)
+
+**Skills section:**
+
+![Skills section](/public/screenshots/portfolio/skillsDemo.png)
+
+**Projects section:**
+
+![Project section](/public/screenshots/portfolio/projectsDemo.png)
+
+**Contact section:**
+
+![Contact section](/public/screenshots/portfolio/contactDemo.png)
+
+**Live:** [Portfolio - Nikhil kadam](https://nikhilkadam.vercel.app/)
+
+## Credits
+
+Feel free to use this template for your own portfolio website, and kindly consider giving me credit if you found it useful.
+
+## License
+
+This project is released under the MIT License. See the [LICENSE](/LICENSE.txt) file for more details.
