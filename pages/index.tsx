@@ -15,7 +15,7 @@ export default function Home({ data }: any) {
         <title>Nikhil Kadam - Portfolio Website</title>
         <meta name="description" content="Nikhil Kadam is a software developer and the founder of localhostcoders, a community that provides valuable resources for beginner developers. Explore Nikhil's latest projects and accomplishments, and learn more about his expertise in software development. Contact Nikhil today to collaborate on your next software development project." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/n-favicon.ico"/>
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
 
       {/* Header */}
