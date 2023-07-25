@@ -10,9 +10,11 @@
         "deployedLink": "https://nft-preview-card-component-nickk.netlify.app/",
         "tech": [
           {
+            "id": 11,
             "tech": "/skillsLogos/html.png"
           },
           {
+            "id": 12,
             "tech": "/skillsLogos/css.png"
           }
         ]

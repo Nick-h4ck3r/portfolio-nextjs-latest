@@ -104,7 +104,6 @@ export default function Projects({ data }: Props) {
                 <span>tech stack used:</span>
                 {project.tech?.map((tech: any, i: any) => (
                   <img
-                    key={i}
                     src={tech.tech}
                     alt=""
                     className="w-5 h-5 rounded-sm object-contain"
