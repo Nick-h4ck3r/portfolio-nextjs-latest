@@ -15,7 +15,10 @@ export default function Projects({ data }: Props) {
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-transparent scrollbar-thumb-slate-500/20 scrollbar-thin">
         {data.map((project: any, i: any) => (
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-24">
+          <div
+            key={i}
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-24"
+          >
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -104,6 +107,7 @@ export default function Projects({ data }: Props) {
                 <span>tech stack used:</span>
                 {project.tech?.map((tech: any, i: any) => (
                   <img
+                    key={i}
                     src={tech.tech}
                     alt=""
                     className="w-5 h-5 rounded-sm object-contain"
