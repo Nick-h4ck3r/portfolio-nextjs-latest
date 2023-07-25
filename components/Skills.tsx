@@ -20,7 +20,7 @@ function Skills({}: Props) {
         hover over a skill to see current proficiency
       </h3> */}
 
-      <div className="pt-10 grid grid-cols-4 gap-5 lg:grid-cols-6 md:pt-28">
+      <div className="pt-10 grid grid-cols-4 gap-5 md:gap-8 lg:grid-cols-6 md:pt-28">
         <Skill imgsrc="/skillsLogos/html.png" directionLeft />
         <Skill imgsrc="/skillsLogos/css.png" directionLeft />
         <Skill imgsrc="/skillsLogos/js.png" directionLeft/>
@@ -35,7 +35,7 @@ function Skills({}: Props) {
         <Skill imgsrc="/skillsLogos/kuber.png" />
         <Skill imgsrc="/skillsLogos/linux.png" />
         <Skill imgsrc="/skillsLogos/mongodb.png" />
-        <Skill imgsrc="/skillsLogos/nextjs.png" />
+        <Skill imgsrc="/skillsLogos/next-js.png" />
         <Skill imgsrc="/skillsLogos/node.png" />
         <Skill imgsrc="/skillsLogos/postman.png" />
         <Skill imgsrc="/skillsLogos/python.png" />

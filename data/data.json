@@ -5,31 +5,98 @@
         "id": 1,
         "title": "NFT Preview Card Component",
         "content": "The NFT Preview card component UI was created entirely with HTML and CSS.",
-        "imgurl": "/projectSS/nft-card-new.png"
+        "imgurl": "/projectSS/nft-card-new.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/nft-preview-card-component",
+        "deployedLink": "https://nft-preview-card-component-nickk.netlify.app/",
+        "tech": [
+          {
+            "id": 11,
+            "tech": "/skillsLogos/html.png"
+          },
+          {
+            "id": 12,
+            "tech": "/skillsLogos/css.png"
+          }
+        ]
       },
       {
         "id": 2,
         "title": "QR Code Component",
         "content": "QR code component created solely with HTML and CSS. The user interface was designed in a stylish, modern look.",
-        "imgurl": "/projectSS/qr-code.png"
+        "imgurl": "/projectSS/qr-code.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/qr-code-component",
+        "deployedLink": "https://qr-code-component-nickk.netlify.app/",
+        "tech": [
+          {
+            "tech": "/skillsLogos/html.png"
+          },
+          {
+            "tech": "/skillsLogos/css.png"
+          }
+        ]
       },
       {
         "id": 3,
         "title": "MovieSpace",
         "content": "The MovieSpace website was built using ReactJS, which uses IMDB API to fetch using a search query using user input. reactjs and imdb api to fetch data and display results.",
-        "imgurl": "/projectSS/moviespace.png"
+        "imgurl": "/projectSS/moviespace.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/movieSpace",
+        "deployedLink": "https://movie-space.netlify.app/",
+        "tech": [
+          {
+            "tech": "/skillsLogos/react.png"
+          },
+          {
+            "tech": "/skillsLogos/js.png"
+          },
+          {
+            "tech": "/skillsLogos/bootstrap.png"
+          }
+        ]
       },
       {
         "id": 4,
         "title": "Portfolio",
         "content": "Nexts was used to create the portfolio website. TailwindCSS and Framer motion were used to style the website. Sanity is utilised as a content management system.",
-        "imgurl": "/projectSS/portfolio.png"
+        "imgurl": "/projectSS/portfolio.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/portfolio-nextjs-latest",
+        "deployedLink": "https://nikhilkadam.vercel.app/",
+        "tech": [
+          {
+            "tech": "/skillsLogos/next-js.png"
+          },
+          {
+            "tech": "/skillsLogos/typescript.png"
+          },
+          {
+            "tech": "/skillsLogos/framer.png"
+          },
+          {
+            "tech": "/skillsLogos/tailwind.png"
+          }
+        ]
       },
       {
         "id": 5,
         "title": "Estatery",
         "content": "Estatery is a real estate website that was built using NextJS, TailwindCSS, and Sanity. The website is fully responsive and mobile friendly.",
-        "imgurl": "/projectSS/estatery-new.png"
+        "imgurl": "/projectSS/estatery-new.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/property-project",
+        "deployedLink": "https://estatery.vercel.app/",
+        "tech": [
+          {
+            "tech": "/skillsLogos/react.png"
+          },
+          {
+            "tech": "/skillsLogos/typescript.png"
+          },
+          {
+            "tech": "/skillsLogos/tailwind.png"
+          },
+          {
+            "tech": "/skillsLogos/sanityio.png"
+          }
+        ]
       }
     ]
   }

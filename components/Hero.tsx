@@ -29,15 +29,15 @@ export default function Hero({}: Props) {
       />
 
       <div className="z-20">
-        <h2 className="text-sm text-gray-400 uppercase tracking-[8px] md:tracking-[15px] pb-2">
-          Full Stack Developer
+        <h2 className="text-sm text-gray-400 uppercase tracking-[8px] md:tracking-[15px] pb-2 font-outfit">
+          Full-stack developer
         </h2>
         <h1 className="pt-2 text-3xl md:text-4xl lg:text-6xl font-semibold px-16">
-          <span className="mr-3">{text}</span>
+          <span className="mr-3 font-outfit">{text}</span>
           <Cursor cursorColor="#aaaaaa" />
         </h1>
 
-        <div className="pt-4 lg:pt-4">
+        <div className="pt-4 lg:pt-4 font-outfit">
           <Link href="#about">
             <button className="heroButton bg-slate-500/20 backdrop-blur-sm">about</button>
           </Link>
