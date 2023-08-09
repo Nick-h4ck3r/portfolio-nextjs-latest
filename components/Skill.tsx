@@ -15,7 +15,7 @@ export default function Skill({ imgsrc, directionLeft }: Props) {
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
         src={imgsrc}
-        className="bg-white rounded-full border border-gray-400 p-2 h-14 w-14 object-cover md:w-20 md:h-20 filter group-hover:grayscale group-hover:border-white transition duration-500"
+        className="bg-white rounded-full border border-gray-400 p-2 h-14 w-14 object-cover md:w-16 md:h-16 lg:w-20 lg:h-20 filter group-hover:grayscale group-hover:border-white transition duration-500"
         alt="skills"
       />
     </div>
