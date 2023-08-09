@@ -17,19 +17,19 @@ export default function Projects({ data }: Props) {
         {data.map((project: any, i: any) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-24"
+            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-28"
           >
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className="w-[300px] md:w-[500px] rounded-t-md object-contain"
+              className="w-[300px] md:w-[400px] rounded-t-md object-contain"
               src={project.imgurl}
               alt=""
             />
 
-            <div className="px-8 w-[300px] md:w-[500px] py-7 font-outfit bg-[#a9a9a9]/5 backdrop-blur-sm md:text-left rounded-b-md space-y-4">
+            <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit bg-[#a9a9a9]/5 backdrop-blur-sm md:text-left rounded-b-md space-y-4">
               <h4 className="text-xl font-semibold md:text-2xl">
                 {project.title}
               </h4>
