@@ -97,6 +97,34 @@
             "tech": "/skillsLogos/sanityio.png"
           }
         ]
+      },
+      {
+        "id": 6,
+        "title": "Airstay",
+        "content": "Airstay is a hotel booking website that was built using ReactJs, TailwindCSS, and Typescript. The backend is on expressjs and mongodb. And firebase is used for storing images.",
+        "imgurl": "/projectSS/airstay.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/airstay",
+        "deployedLink": "https://airstay.vercel.app/",
+        "tech": [
+          {
+            "tech": "/skillsLogos/react.png"
+          },
+          {
+            "tech": "/skillsLogos/js.png"
+          },
+          {
+            "tech": "/skillsLogos/tailwind.png"
+          },
+          {
+            "tech": "/skillsLogos/firebase.png"
+          },
+          {
+            "tech": "/skillsLogos/mongodb.png"
+          },
+          {
+            "tech": "/skillsLogos/express.png"
+          }
+        ]
       }
     ]
   }
