@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Image from "next/image";
 
 type Props = {};
 
@@ -24,7 +25,7 @@ export default function About({}: Props) {
         About
       </h3>
 
-      <motion.img
+      {/* <motion.img
         initial={{
           opacity: 0,
         }}
@@ -37,9 +38,13 @@ export default function About({}: Props) {
         }}
         viewport={{
           once: true,
-        }}
+        }} */}
+      <Image
+        width={350}
+        height={450}
         src="/profilePic.jpg"
         className="-mb-32 md:mb-0 md:ml-16 flex-shrink-0 w-40 h-40 rounded-xl object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[350px] xl:h-[450px]"
+        alt="nikhil kadam profile image"
       />
 
       <div className="px-0 md:px-20">

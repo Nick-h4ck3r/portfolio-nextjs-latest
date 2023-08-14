@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Image from "next/image";
 
 type Props = {
   data: Array<any>;
@@ -12,24 +13,29 @@ export default function Projects({ data }: Props) {
       <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-400 text-2xl">
         Projects
       </h3>
+      <div className="absolute bottom-32 md:bottom-12 md:text-lg text-gray-200 z-40 items-center font-outfit opacity-70 animate-pulse ">
+        swipe to see more... <span className="text-blue-500">➡</span>
+      </div>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-transparent scrollbar-thumb-slate-500/20 scrollbar-thin">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
         {data.map((project: any, i: any) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0.2 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-28"
           >
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
+            <Image
+              width={400}
+              height={400}
               className="w-[300px] md:w-[400px] rounded-t-md object-contain"
               src={project.imgurl}
               alt=""
             />
 
-            <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit bg-[#a9a9a9]/5 backdrop-blur-sm md:text-left rounded-b-md space-y-4">
+            <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit bg-[#a9a9a9]/5 backdrop-blur-sm md:text-left rounded-b-md space-y-4 md:space-y-3">
               <h4 className="text-xl font-semibold md:text-2xl">
                 {project.title}
               </h4>
@@ -115,7 +121,7 @@ export default function Projects({ data }: Props) {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 

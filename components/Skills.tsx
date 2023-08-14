@@ -31,6 +31,7 @@ function Skills({}: Props) {
         <Skill imgsrc="/skillsLogos/framer.png" directionLeft/>
         <Skill imgsrc="/skillsLogos/git.png" directionLeft/>
         <Skill imgsrc="/skillsLogos/github.png" directionLeft/>
+        <Skill imgsrc="/skillsLogos/firebase.png" directionLeft/>
         <Skill imgsrc="/skillsLogos/java.png" />
         <Skill imgsrc="/skillsLogos/kuber.png" />
         <Skill imgsrc="/skillsLogos/linux.png" />
@@ -43,6 +44,7 @@ function Skills({}: Props) {
         <Skill imgsrc="/skillsLogos/sanityio.png" />
         <Skill imgsrc="/skillsLogos/tailwind.png" />
         <Skill imgsrc="/skillsLogos/typescript.png" />
+
         
       </div>
     </motion.div>

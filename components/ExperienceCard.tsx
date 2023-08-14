@@ -21,10 +21,10 @@ export default function ExperienceCard({
   endDate,
 }: Props) {
   return (
-    <article className="flex flex-col rounded-r-lg flex-shrink-0 snap-center backdrop-blur-sm font-outfit bg-[#141414] transition-opacity duration-200 overflow-hidden md:py-14 py-10 mt-10 border-l border-blue-500 md:border-gray-600 md:hover:border-blue-500 md:max-w-3xl max-w-xs md:px-0 px-5">
+    <article className="flex flex-col rounded-r-lg flex-shrink-0 snap-center backdrop-blur-sm font-outfit bg-[#141414] transition-transform duration-200 overflow-hidden md:py-14 py-10 md:mt-10 border-l border-gray-600 hover:border-blue-500 md:max-w-3xl max-w-xs md:px-0 px-5">
       <div className="flex items-center md:pl-10">
         <motion.img
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -10 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
