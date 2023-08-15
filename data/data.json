@@ -125,6 +125,28 @@
             "tech": "/skillsLogos/express.png"
           }
         ]
+      },
+      {
+        "id": 7,
+        "title": "Task Manager",
+        "content": "Task Manager is a application that was built using nodejs, expressjs, and mongodb. The application is used to create, read, update, and delete tasks.",
+        "imgurl": "/projectSS/task-manager.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/task_list",
+        "deployedLink": "https://task-list-ivory.vercel.app/",
+        "tech": [
+          {
+            "tech": "/skillsLogos/node.png"
+          },
+          {
+            "tech": "/skillsLogos/js.png"
+          },
+          {
+            "tech": "/skillsLogos/mongodb.png"
+          },
+          {
+            "tech": "/skillsLogos/express.png"
+          }
+        ]
       }
     ]
   }
