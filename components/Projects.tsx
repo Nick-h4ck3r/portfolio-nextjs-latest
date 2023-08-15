@@ -13,7 +13,7 @@ export default function Projects({ data }: Props) {
       <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-400 text-2xl">
         Projects
       </h3>
-      <div className="absolute bottom-32 md:bottom-12 md:text-lg text-gray-200 z-40 items-center font-outfit opacity-70 animate-pulse ">
+      <div className="absolute bottom-32 md:bottom-12 md:text-lg text-gray-200 z-40 items-center font-outfit animate-pulse opacity-75">
         swipe to see more... <span className="text-blue-500">➡</span>
       </div>
 
@@ -41,7 +41,7 @@ export default function Projects({ data }: Props) {
               </h4>
 
               <div className="text-xs font-extralight space-x-4 mt-2 text-gray-200">
-                <span className="cursor-pointer hover:underline">
+                <span className="cursor-pointer underline">
                   <a href={project.githubLink} target="_blank" rel="noreferrer">
                     Github
                   </a>
@@ -71,7 +71,7 @@ export default function Projects({ data }: Props) {
                   </span>
                 </span>
 
-                <span className="cursor-pointer hover:underline">
+                <span className="cursor-pointer underline">
                   <a
                     href={project.deployedLink}
                     target="_blank"
