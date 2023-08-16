@@ -147,6 +147,28 @@
             "tech": "/skillsLogos/express.png"
           }
         ]
+      },
+      {
+        "id": 8,
+        "title": "NextGen - Waitlist",
+        "content": "This is a responsive, aesthetically pleasing, with modern animations. It is a landing page for a waitlist. The website was built using NextJS, TailwindCSS, and Framer Motion.",
+        "imgurl": "/projectSS/nextgen.png",
+        "githubLink": "https://github.com/Nick-h4ck3r/nextgen-nocode",
+        "deployedLink": "https://nextgen-nocode.vercel.app/",
+        "tech": [
+          {
+            "tech": "/skillsLogos/next-js.png"
+          },
+          {
+            "tech": "/skillsLogos/tailwind.png"
+          },
+          {
+            "tech": "/skillsLogos/framer.png"
+          },
+          {
+            "tech": "/skillsLogos/typescript.png"
+          }
+        ]
       }
     ]
   }
