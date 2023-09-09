@@ -25,13 +25,13 @@ export default function Contact({}: Props) {
       </h3>
 
       <div className="flex flex-col mt-14">
-        <h4 className="text-4xl font-semibold text-center font-outfit">
+        <h4 className="text-4xl font-semibold text-black dark:text-white text-center font-outfit">
           connect with me on{" "}
           <span className="underline decoration-blue-600">socials.</span>
         </h4>
 
         <div className="flex flex-wrap gap-6 justify-center font-outfit text-xl font-extralight text-gray-500 mt-14">
-          <p className="hover:text-gray-300 duration-200">
+          <p className="hover:text-black dark:hover:text-gray-300 duration-200">
             <a href="https://youtube.com/@nickk2305">youtube</a>
             <span className="inline-flex">
               <svg
@@ -53,7 +53,7 @@ export default function Contact({}: Props) {
               </svg>
             </span>
           </p>
-          <p className="hover:text-gray-300 duration-200">
+          <p className="hover:text-black dark:hover:text-gray-300 duration-200">
             <a href="https://blog.nikhilkadam.me/">blog</a>
             <span className="inline-flex">
               <svg
@@ -75,7 +75,7 @@ export default function Contact({}: Props) {
               </svg>
             </span>
           </p>
-          <p className="hover:text-gray-300 duration-200">
+          <p className="hover:text-black dark:hover:text-gray-300 duration-200">
             <a href="https://twitter.com/NickK2305">twitter</a>
             <span className="inline-flex">
               <svg
@@ -97,7 +97,7 @@ export default function Contact({}: Props) {
               </svg>
             </span>
           </p>
-          <p className="hover:text-gray-300 duration-200">
+          <p className="hover:text-black dark:hover:text-gray-300 duration-200">
             <a href="https://www.linkedin.com/in/nickk2305/">linkedin</a>
             <span className="inline-flex">
               <svg
@@ -120,7 +120,7 @@ export default function Contact({}: Props) {
             </span>
           </p>
 
-          <p className="hover:text-gray-300 duration-200">
+          <p className="hover:text-black dark:hover:text-gray-300 duration-200">
             <a href="https://github.com/Nick-h4ck3r">github</a>
             <span className="inline-flex">
               <svg
@@ -145,7 +145,7 @@ export default function Contact({}: Props) {
         </div>
 
         <h5 className="mt-28">
-          <p className="text-xl font-md font-outfit text-gray-200 md:ml-5">
+          <p className="text-xl font-md font-outfit text-gray-900 dark:text-gray-200 md:ml-5">
             or drop a mail at{" "}
             <a href="mailto:nickkadam23@gmail.com" className="cursor-pointer">
               <span className="link link-underline link-underline-black">
