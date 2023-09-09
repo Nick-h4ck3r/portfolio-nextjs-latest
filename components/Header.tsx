@@ -28,7 +28,10 @@ export default function Header({}: Props) {
       >
         <ul className="flex justify-center my-3 space-x-4">
           <li>
-            <a href="#hero" className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+            <a
+              href="#hero"
+              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -42,7 +45,7 @@ export default function Header({}: Props) {
           </li>
           <li>
             <a
-              href="#"
+              href="https://twitter.com/NickK2305"
               className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
             >
               <svg
@@ -57,7 +60,7 @@ export default function Header({}: Props) {
           </li>
           <li>
             <a
-              href="#"
+              href="https://github.com/Nick-h4ck3r"
               className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
             >
               <svg
@@ -76,7 +79,7 @@ export default function Header({}: Props) {
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/nickk2305/"
               className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
             >
               <svg
