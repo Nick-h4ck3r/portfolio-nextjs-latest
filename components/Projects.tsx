@@ -13,7 +13,7 @@ export default function Projects({ data }: Props) {
       <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-400 text-2xl">
         Projects
       </h3>
-      <div className="absolute bottom-32 md:bottom-12 md:text-lg text-gray-200 z-40 items-center font-outfit animate-pulse opacity-75">
+      <div className="absolute bottom-32 md:bottom-12 md:text-lg text-gray-800 dark:text-gray-200 z-40 items-center font-outfit animate-pulse opacity-80">
         swipe to see more... <span className="text-blue-500">➡</span>
       </div>
 
@@ -35,12 +35,12 @@ export default function Projects({ data }: Props) {
               alt=""
             />
 
-            <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit bg-[#a9a9a9]/5 backdrop-blur-sm md:text-left rounded-b-md space-y-4 md:space-y-3">
-              <h4 className="text-xl font-semibold md:text-2xl">
+            <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit shadow-sm bg-slate-100/40 dark:bg-[#a9a9a9]/5 backdrop-blur-sm md:text-left rounded-b-md space-y-4 md:space-y-3">
+              <h4 className="text-xl font-semibold md:text-2xl text-black dark:text-white">
                 {project.title}
               </h4>
 
-              <div className="text-xs font-extralight space-x-4 mt-2 text-gray-200">
+              <div className="text-xs font-light dark:font-extralight space-x-4 mt-2 text-gray-700 dark:text-gray-200">
                 <span className="cursor-pointer underline">
                   <a href={project.githubLink} target="_blank" rel="noreferrer">
                     Github
@@ -105,11 +105,11 @@ export default function Projects({ data }: Props) {
                 </span>
               </div>
 
-              <p className="text-sm font-light md:text-base mt-3 text-gray-100">
+              <p className="text-sm font-normal dark:font-light md:text-base mt-3 text-gray-800 dark:text-gray-100">
                 {project.content}
               </p>
 
-              <div className="flex gap-2 mt-2 font-light text-sm items-center text-gray-400">
+              <div className="flex gap-2 mt-2 font-normal dark:font-light text-sm items-center text-gray-700 dark:text-gray-400">
                 <span>tech stack used:</span>
                 {project.tech?.map((tech: any, i: any) => (
                   <img
@@ -125,7 +125,7 @@ export default function Projects({ data }: Props) {
         ))}
       </div>
 
-      <div className="w-full absolute top-[27%] bg-gradient-to-r from-blue-500 opacity-30 left-0 h-[500px] -skew-y-12"></div>
+      <div className="w-full absolute top-[27%] bg-gradient-to-r from-blue-500 opacity-70 dark:opacity-30 left-0 h-[500px] -skew-y-12"></div>
     </div>
   );
 }

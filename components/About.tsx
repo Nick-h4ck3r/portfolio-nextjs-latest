@@ -47,7 +47,7 @@ export default function About({}: Props) {
         alt="nikhil kadam profile image"
       />
 
-      <div className="px-0 md:px-20">
+      <div className="px-0 md:px-20 text-black dark:text-white">
         <h4 className="text-3xl md:text-4xl font-semibold mt-8 lg:mt-2 font-outfit lg:ml-6 md:ml-6">
           $: /whoami
         </h4>
@@ -68,7 +68,7 @@ export default function About({}: Props) {
               rel="noreferrer"
             >
               localhostcoders
-              <span className="inline-flex text-white">
+              <span className="inline-flex text-black dark:text-white">
                 <svg
                   className="with-icon_icon__MHUeb"
                   data-testid="geist-icon"
