@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 
@@ -19,11 +18,7 @@ export default function Projects({ data }: Props) {
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
         {data.map((project: any, i: any) => (
-          <motion.div
-            initial={{ opacity: 0.2 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+          <div
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-28"
           >
@@ -121,7 +116,7 @@ export default function Projects({ data }: Props) {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 
