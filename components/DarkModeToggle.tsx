@@ -1,8 +1,20 @@
-// DarkModeToggle.tsx
-
 import { useEffect, useState } from "react";
 
 export default function DarkModeToggle() {
+  function applyThemeFromLocalStorage() {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }
+
+  // Apply the theme on app startup
+  useEffect(() => {
+    applyThemeFromLocalStorage();
+  }, []);
+  
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {

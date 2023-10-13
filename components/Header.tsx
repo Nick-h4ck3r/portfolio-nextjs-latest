@@ -113,7 +113,7 @@ export default function Header({}: Props) {
           duration: 1.5,
           type: "tween",
         }}
-        className="flex flex-row items-center text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 cursor-pointer space-x-2"
+        className="flex flex-row items-center text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 cursor-pointer space-x-2 pt-2 xl:pt-0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
