@@ -153,7 +153,7 @@ export default function Contact({}: Props) {
                 nickkadam23@gmail.com
               </span>
             </a>
-            <span className="inline-flex">
+            <span className="inline-flex dark:text-white text-black">
               <svg
                 className="with-icon_icon__MHUeb"
                 data-testid="geist-icon"
@@ -167,7 +167,6 @@ export default function Contact({}: Props) {
                 viewBox="0 0 24 24"
                 width="24"
                 style={{
-                  color: "rgb(229,231,235)",
                   width: "15px",
                   height: "14px",
                 }}
@@ -183,7 +182,7 @@ export default function Contact({}: Props) {
       <div className="text-sm bottom-10 items-center justify-center absolute flex font-outfit text-gray-500">
         <p>
           website designed and developed by{" "}
-          <span className="underline decoration-blue-900">
+          <span className="text-blue-500">
             <a
               target={"_blank"}
               href="https://twitter.com/NickK2305"
@@ -193,7 +192,7 @@ export default function Contact({}: Props) {
             </a>
           </span>
         </p>
-        <span className="inline-flex">
+        <span className="inline-flex text-blue-500">
           <svg
             className="with-icon_icon__MHUeb"
             data-testid="geist-icon"

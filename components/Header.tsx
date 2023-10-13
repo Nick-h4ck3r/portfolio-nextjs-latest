@@ -1,14 +1,12 @@
 import React from "react";
-import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
 
 type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 py-3 -mx-6 md:p-3 flex items-start justify-around md:mx-auto z-50 xl:items-center backdrop-blur-sm bg-slate-400/30 dark:bg-slate-800/30 ">
+    <header className="sticky top-0 py-3 -mx-6 md:p-3 flex items-start justify-around md:mx-auto z-50 xl:items-center backdrop-blur-sm bg-slate-300/30 dark:bg-slate-800/40 ">
       <motion.div
         initial={{
           x: -500,
@@ -115,19 +113,21 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 cursor-pointer space-x-2 pt-2 xl:pt-0"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="w-6 h-6"
-        >
-          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-        </svg>
+        <a href="#contact" className="inline-flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="w-6 h-6"
+          >
+            <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+            <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+          </svg>
 
-        <p className="hidden md:inline-flex text-sm">
-          <a href="#contact">Get in touch</a>
-        </p>
+          <p className="hidden md:inline-flex text-sm">
+            <span>Get in touch</span>
+          </p>
+        </a>
       </motion.div>
     </header>
   );

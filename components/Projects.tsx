@@ -30,12 +30,12 @@ export default function Projects({ data }: Props) {
               alt=""
             />
 
-            <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit shadow-sm bg-slate-100/40 dark:bg-[#a9a9a9]/5 backdrop-blur-sm md:text-left rounded-b-md space-y-4 md:space-y-3">
+            <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit shadow-lg bg-slate-100/20 dark:bg-gray-700/30 backdrop-blur-sm md:text-left rounded-b-md space-y-4">
               <h4 className="text-xl font-semibold md:text-2xl text-black dark:text-white">
                 {project.title}
               </h4>
 
-              <div className="text-xs font-light dark:font-extralight space-x-4 mt-2 text-gray-700 dark:text-gray-200">
+              <div className="text-xs font-light dark:font-extralight space-x-4 md:mt-0 text-gray-700 dark:text-gray-200">
                 <span className="cursor-pointer underline">
                   <a href={project.githubLink} target="_blank" rel="noreferrer">
                     Github
