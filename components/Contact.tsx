@@ -54,7 +54,7 @@ export default function Contact({}: Props) {
             </span>
           </p>
           <p className="hover:text-black dark:hover:text-gray-300 duration-200">
-            <a href="https://blog.nikhilkadam.me/">blog</a>
+            <a href="https://nickk2305.hashnode.dev/">blog</a>
             <span className="inline-flex">
               <svg
                 className="with-icon_icon__MHUeb"

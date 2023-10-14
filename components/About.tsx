@@ -56,7 +56,7 @@ export default function About({}: Props) {
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-point-filled animate-pulse ml-3 h-4 w-4 pt-[2px]"
             viewBox="0 0 24 24"
-            stroke-width="2"
+            strokeWidth="2"
             stroke="currentColor"
             fill="none"
             strokeLinecap="round"
@@ -65,7 +65,7 @@ export default function About({}: Props) {
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path
               d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z"
-              stroke-width="0"
+              strokeWidth="0"
               fill="currentColor"
             ></path>
           </svg>
