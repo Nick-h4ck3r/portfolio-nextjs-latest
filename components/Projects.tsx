@@ -85,7 +85,7 @@ export default function Projects({ data }: Props) {
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          onSwiper={(swiper:any) => (swiperRef.current = swiper)}
         >
           {data.map((project: any, i: any) => (
             <SwiperSlide key={i}>
