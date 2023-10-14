@@ -179,7 +179,7 @@ export default function Contact({}: Props) {
         </h5>
       </div>
 
-      <div className="text-sm bottom-10 items-center justify-center absolute flex font-outfit text-gray-500">
+      <div className="text-sm bottom-20 md:bottom-10 items-center justify-center absolute flex font-outfit text-gray-500">
         <p>
           website designed and developed by{" "}
           <span className="text-blue-500">

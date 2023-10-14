@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
+import profilePic from 'public/extraImages/profilePic.jpeg'
 
 type Props = {};
 
@@ -42,9 +43,11 @@ export default function About({}: Props) {
       <Image
         width={350}
         height={450}
-        src="/extraImages/profilePic.jpg"
+        src={profilePic}
         className="-mb-32 md:mb-0 md:ml-16 flex-shrink-0 w-40 h-40 rounded-xl object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[350px] xl:h-[450px]"
         alt="nikhil kadam profile image"
+        priority={false}
+        placeholder="blur"
       />
 
       <div className="px-0 md:px-20 text-black dark:text-white">
@@ -69,7 +72,9 @@ export default function About({}: Props) {
               fill="currentColor"
             ></path>
           </svg>
-          <p className="font-outfit mr-5 text-[12px] font-light">open to opportunities</p>
+          <p className="font-outfit mr-5 text-[12px] font-light">
+            open to opportunities
+          </p>
         </div>
 
         <p className="text-sm md:text-base lg:text-lg font-light px-4 md:px-7 pt-3 font-outfit">

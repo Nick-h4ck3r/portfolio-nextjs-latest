@@ -39,9 +39,7 @@ export default function Blogs({}: Props) {
     });
 
     const data = await response.json();
-    console.log(data);
     setPosts(data.data.publication.posts.edges);
-    console.log(posts);
     // console.log(data.data.user.publication.posts);
   };
 
