@@ -70,7 +70,7 @@ export default function Blogs({}: Props) {
           {posts.map((post: any, key: any) => (
             <a
               href={`https://nickk2305.hashnode.dev/${post.node.slug}`}
-              key={post.id}
+              key={key}
             >
               <div className="md:flex bg-slate-300/30 backdrop-blur-sm dark:bg-slate-400/20 rounded-md gap-4 mx-auto">
                 <Image
