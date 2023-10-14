@@ -60,6 +60,11 @@ export default function Hero({}: Props) {
               projects
             </button>
           </Link>
+          <Link href={"#blogs"}>
+            <button className={buttonClasses}>
+              blogs
+            </button>
+          </Link>
         </div>
       </div>
     </div>
