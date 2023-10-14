@@ -68,11 +68,11 @@ export default function Blogs({}: Props) {
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-10 w-full">
           {posts.map((post: any, key: any) => (
-            <a href={`https://nickk2305.hashnode.dev/${post.node.slug}`}>
-              <div
-                className="md:flex bg-slate-300/30 backdrop-blur-sm dark:bg-slate-400/20 rounded-md gap-4 mx-auto"
-                key={post.id}
-              >
+            <a
+              href={`https://nickk2305.hashnode.dev/${post.node.slug}`}
+              key={post.id}
+            >
+              <div className="md:flex bg-slate-300/30 backdrop-blur-sm dark:bg-slate-400/20 rounded-md gap-4 mx-auto">
                 <Image
                   className={`object-cover w-0 md:w-[50%] rounded-md`}
                   src={post.node.coverImage.url}
