@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 type Props = {};
 
@@ -72,9 +73,12 @@ export default function Blogs({}: Props) {
                 className="md:flex bg-slate-300/30 backdrop-blur-sm dark:bg-slate-400/20 rounded-md gap-4 mx-auto"
                 key={post.id}
               >
-                <img
+                <Image
                   className={`object-cover w-0 md:w-[50%] rounded-md`}
                   src={post.node.coverImage.url}
+                  alt={post.node.title}
+                  width={200}
+                  height={200}
                 />
                 <div className="py-4 md:py-2 px-2 md:pl-0 md:pr-4">
                   <h2 className="font-outfit font-semibold text-sm md:text-base px-2 md:px-0 md:pt-2 text-black dark:text-white">
