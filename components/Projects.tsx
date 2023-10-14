@@ -9,14 +9,12 @@ type Props = {
 
 export default function Projects({ data }: Props) {
   const swiperRef = useRef<any>(null);
-  const [indexAt,setIndexAt] = useState(0)
-
+  const [indexAt, setIndexAt] = useState(0);
 
   const slideToPrev = () => {
     if (swiperRef.current) {
       swiperRef.current.slidePrev();
       setIndexAt(swiperRef.current.activeIndex);
-      console.log(indexAt)
     }
   };
 
@@ -24,7 +22,6 @@ export default function Projects({ data }: Props) {
     if (swiperRef.current) {
       swiperRef.current.slideNext();
       setIndexAt(swiperRef.current.activeIndex);
-      console.log(indexAt)
     }
   };
 
@@ -60,7 +57,7 @@ export default function Projects({ data }: Props) {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className={`icon icon-tabler icon-tabler-square-rounded-chevron-right-filled h-8 w-8 md:w-14 md:h-14 cursor-pointer ${
-            indexAt == 7 ? "opacity-20 cursor-not-allowed": "opacity-100"
+            indexAt == 7 ? "opacity-20 cursor-not-allowed" : "opacity-100"
           }`}
           width="24"
           height="24"
@@ -85,7 +82,7 @@ export default function Projects({ data }: Props) {
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
-          onSwiper={(swiper:any) => (swiperRef.current = swiper)}
+          onSwiper={(swiper: any) => (swiperRef.current = swiper)}
         >
           {data.map((project: any, i: any) => (
             <SwiperSlide key={i}>
@@ -99,6 +96,7 @@ export default function Projects({ data }: Props) {
                   className="w-[300px] md:w-[400px] rounded-t-md object-contain cursor-grab"
                   src={project.imgurl}
                   alt=""
+                  priority={true}
                 />
 
                 <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit shadow-lg bg-slate-100/20 dark:bg-gray-700/30 backdrop-blur-sm md:text-left rounded-b-md space-y-4 cursor-grab">

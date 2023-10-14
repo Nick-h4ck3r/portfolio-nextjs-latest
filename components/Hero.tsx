@@ -26,8 +26,9 @@ export default function Hero({}: Props) {
         width={200}
         height={200}
         className="relative h-32 w-32 rounded-full mx-auto object-cover"
-        src="/extraImages/heroImage.jpeg"
+        src="/extraImages/heroImage2.jpg"
         alt="nikhil kadam profile image"
+        priority={true}
       />
 
       <div className="z-20">
