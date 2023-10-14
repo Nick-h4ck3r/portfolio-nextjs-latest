@@ -4,9 +4,6 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 
-const imgURl =
-  "https://cdn.hashnode.com/res/hashnode/image/upload/v1671209654236/2TRB5sdiZ.png?w=500&h=500&fit=crop&crop=faces&auto=compress";
-
 const buttonClasses = "heroButton"
 
 type Props = {};
@@ -42,7 +39,7 @@ export default function Hero({}: Props) {
           <Cursor cursorBlinking={false} />
         </h1>
 
-        <div className="pt-4 lg:pt-4 font-outfit">
+        <div className="pt-4 lg:pt-4 font-outfit px-4 md:px-0">
           <Link href="#about">
             <button className={buttonClasses}>
               about
