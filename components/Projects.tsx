@@ -182,8 +182,10 @@ export default function Projects({ data }: Props) {
                   <div className="flex gap-2 mt-2 font-normal dark:font-light text-sm items-center text-gray-700 dark:text-gray-400">
                     <span>tech stack used:</span>
                     {project.tech?.map((tech: any, i: any) => (
-                      <img
+                      <Image
                         key={i}
+                        width={20}
+                        height={20}
                         src={tech.tech}
                         alt=""
                         className="w-5 h-5 rounded-sm object-contain"
