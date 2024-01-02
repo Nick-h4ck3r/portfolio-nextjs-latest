@@ -70,19 +70,19 @@ export default function Blogs({}: Props) {
               href={`https://nickk2305.hashnode.dev/${post.node.slug}`}
               key={key}
             >
-              <div className="md:flex bg-slate-300/30 backdrop-blur-sm dark:bg-slate-400/20 rounded-md gap-4 mx-auto">
+              <div className="md:flex bg-slate-300/30 backdrop-blur-sm dark:bg-slate-400/20 rounded-md gap-4 mx-auto shadow-sm hover:scale-105 duration-300">
                 <Image
-                  className={`object-cover w-0 md:w-[50%] rounded-md`}
+                  className={`object-cover w-0 md:w-[50%] rounded-l-md`}
                   src={post.node.coverImage.url}
                   alt={post.node.title}
                   width={200}
                   height={200}
                 />
-                <div className="py-4 md:py-2 px-2 md:pl-0 md:pr-4">
-                  <h2 className="font-outfit font-semibold text-sm md:text-base px-2 md:px-0 md:pt-2 text-black dark:text-white">
+                <div className="py-4 md:py-4 px-2 md:pl-0 md:pr-4">
+                  <h2 className="font-outfit font-semibold text-sm md:text-lg md:font-bold md:leading-6 px-2 md:px-0 md:pt-2 text-black dark:text-white">
                     {post.node.title}
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-400 text-xs line-clamp-2 md:line-clamp-4 px-4 md:px-0 pt-3 md:pt-2">
+                  <p className="text-gray-500 dark:text-gray-400 text-xs md:text-sm font-outfit line-clamp-2 font-light md:line-clamp-4 px-4 md:px-0 pt-3 md:pt-2">
                     {post.node.brief}
                   </p>
                 </div>
