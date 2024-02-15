@@ -1,36 +1,33 @@
 // import { BsFillBootstrapFill, BsRobot } from 'react-icons/bs';
 import {
-  SiAngular,
-  SiApollographql,
+  SiBootstrap,
   SiCss3,
+  SiDocker,
   SiExpress,
   SiFirebase,
-  SiGatsby,
-  SiGraphql,
+  SiGit,
+  SiGithub,
+  SiHtml5,
   SiJavascript,
   SiJest,
   SiJquery,
-  SiLaravel,
   SiMui,
   SiNextdotjs,
   SiNginx,
   SiNodedotjs,
-  SiNuxtdotjs,
-  SiPhp,
+  SiPostman,
   SiPrisma,
   SiPwa,
+  SiPython,
   SiReact,
   SiRedux,
-  SiRemix,
-  SiSocketdotio,
-  SiStorybook,
+  SiShadcnui,
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
   SiVite,
-  SiVuedotjs,
   SiWebpack,
-  SiWordpress,
+  SiWordpress
 } from "@icons-pack/react-simple-icons";
 
 export type stacksProps = {
@@ -40,12 +37,6 @@ export type stacksProps = {
 const iconSize = 24;
 
 export const STACKS: stacksProps = {
-  PHP: (
-    <SiPhp
-      size={iconSize}
-      color="default"
-    />
-  ),
   JavaScript: (
     <SiJavascript
       size={iconSize}
@@ -76,26 +67,7 @@ export const STACKS: stacksProps = {
       color="default"
     />
   ),
-  //   Bootstrap: (
-  //     <BsFillBootstrapFill
-  //       size={iconSize}
-  //       className="text-purple-500"
-  //     />
-  //   ),
-  GraphQL: (
-    <SiGraphql
-      size={iconSize}
-      className="text-pink-600"
-    />
-  ),
-  Apollo: <SiApollographql size={iconSize} />,
   WordPress: <SiWordpress size={iconSize} />,
-  Laravel: (
-    <SiLaravel
-      size={iconSize}
-      color="default"
-    />
-  ),
   "Material UI": (
     <SiMui
       size={iconSize}
@@ -120,32 +92,8 @@ export const STACKS: stacksProps = {
       color="default"
     />
   ),
-  Angular: (
-    <SiAngular
-      size={iconSize}
-      color="default"
-    />
-  ),
-  "Vue.js": (
-    <SiVuedotjs
-      size={iconSize}
-      color="default"
-    />
-  ),
-  "Nuxt.js": (
-    <SiNuxtdotjs
-      size={iconSize}
-      color="default"
-    />
-  ),
   "Node.js": (
     <SiNodedotjs
-      size={iconSize}
-      color="default"
-    />
-  ),
-  Gatsby: (
-    <SiGatsby
       size={iconSize}
       color="default"
     />
@@ -174,8 +122,20 @@ export const STACKS: stacksProps = {
       color="default"
     />
   ),
+  Docker: (
+    <SiDocker
+      size={iconSize}
+      color="default"
+    />
+  ),
   Nginx: (
     <SiNginx
+      size={iconSize}
+      color="default"
+    />
+  ),
+  Postman: (
+    <SiPostman
       size={iconSize}
       color="default"
     />
@@ -186,8 +146,8 @@ export const STACKS: stacksProps = {
       color="default"
     />
   ),
-  Storybook: (
-    <SiStorybook
+  HTML5: (
+    <SiHtml5
       size={iconSize}
       color="default"
     />
@@ -198,14 +158,8 @@ export const STACKS: stacksProps = {
       color="default"
     />
   ),
-  Socket: (
-    <SiSocketdotio
-      size={iconSize}
-      color="default"
-    />
-  ),
-  Remix: (
-    <SiRemix
+  Bootstrap: (
+    <SiBootstrap
       size={iconSize}
       color="default"
     />
@@ -216,8 +170,32 @@ export const STACKS: stacksProps = {
       color="default"
     />
   ),
+  Git: (
+    <SiGit
+      size={iconSize}
+      color="default"
+    />
+  ),
+  Github: (
+    <SiGithub
+      size={iconSize}
+      color="default"
+    />
+  ),
   Jquery: (
     <SiJquery
+      size={iconSize}
+      color="default"
+    />
+  ),
+  Python: (
+    <SiPython
+      size={iconSize}
+      color="default"
+    />
+  ),
+  Shadcn: (
+    <SiShadcnui
       size={iconSize}
       color="default"
     />
