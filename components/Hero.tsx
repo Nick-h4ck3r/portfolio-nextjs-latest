@@ -18,6 +18,8 @@ export default function Hero({}: Props) {
     ],
     loop: true,
     delaySpeed: 1000,
+    typeSpeed: 50,
+    deleteSpeed: 20,
   });
   return (
     <div className="pt-16 md:pt-28 h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
