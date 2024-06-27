@@ -2,10 +2,10 @@
 
 import { ReactNode, useEffect, useState } from "react";
 
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "@/components/index";
 import { STACKS } from "@/data/stacks";
 
-export function SkillsScrolling() {
+export default function SkillsScrolling() {
   const [shuffledSkillsChunks, setShuffledSkillsChunks] = useState<
     Array<Array<[string, ReactNode]>>
   >([]);

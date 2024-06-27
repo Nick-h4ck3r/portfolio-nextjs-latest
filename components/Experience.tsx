@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import ExperienceCard from "./ExperienceCard";
+import { ExperienceCard } from "@/components/index";
 import experiencesData from "../data/experience.json";
 
 type Props = {};

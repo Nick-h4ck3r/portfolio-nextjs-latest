@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-import BackgroundCircles from "./BackgroundCircles";
+import { BackgroundCircles } from "@/components/index";
 
 type Props = {};
 
@@ -37,35 +37,27 @@ export default function Hero({}: Props) {
           Full-stack developer
         </h2>
         <h1 className="pt-2 text-3xl md:text-4xl lg:text-6xl font-semibold px-16 text-black dark:text-gray-200">
-          <span className="mr-3 font-outfit text-black dark:text-gray-200">{text}</span>
+          <span className="mr-3 font-outfit text-black dark:text-gray-200">
+            {text}
+          </span>
           <Cursor cursorBlinking={false} />
         </h1>
 
         <div className="pt-4 lg:pt-4 font-outfit px-4 md:px-0">
           <Link href="#about">
-            <button className="heroButton">
-              about
-            </button>
+            <button className="heroButton">about</button>
           </Link>
           <Link href={"#experience"}>
-            <button className="heroButton">
-              experience
-            </button>
+            <button className="heroButton">experience</button>
           </Link>
           <Link href={"#skills"}>
-            <button className="heroButton">
-              skills
-            </button>
+            <button className="heroButton">skills</button>
           </Link>
           <Link href={"#projects"}>
-            <button className="heroButton">
-              projects
-            </button>
+            <button className="heroButton">projects</button>
           </Link>
           <Link href={"#blogs"}>
-            <button className="heroButton">
-              blogs
-            </button>
+            <button className="heroButton">blogs</button>
           </Link>
         </div>
       </div>

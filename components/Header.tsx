@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import DarkModeToggle from "./DarkModeToggle";
+import { DarkModeToggle } from "@/components/index";
 
 type Props = {};
 
@@ -114,7 +114,10 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 cursor-pointer space-x-2 pt-2 xl:pt-0"
       >
-        <a href="#contact" className="inline-flex items-center gap-2">
+        <a
+          href="#contact"
+          className="inline-flex items-center gap-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
