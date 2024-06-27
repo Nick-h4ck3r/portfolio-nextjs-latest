@@ -1,11 +1,12 @@
-import React, { useRef, useState } from "react";
-import Image from "next/image";
+// import function to register Swiper custom elements
+import { register } from "swiper/element/bundle";
+// register Swiper custom elements
+register();
+
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import {
-  ChevronDoubleLeftIcon,
-  ChevronDoubleRightIcon,
-} from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 type Props = {
   data: Array<any>;
@@ -66,7 +67,7 @@ export default function Projects({ data }: Props) {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className={`icon icon-tabler icon-tabler-square-rounded-chevron-right-filled h-8 w-8 md:w-14 md:h-14 cursor-pointer ${
-            indexAt == 7 ? "opacity-20 cursor-not-allowed" : "opacity-100"
+            indexAt == 8 ? "opacity-20 cursor-not-allowed" : "opacity-100"
           }`}
           width="24"
           height="24"
@@ -206,12 +207,14 @@ export default function Projects({ data }: Props) {
                   </div>
                 </div>
               </div>
+
+              <div>{i + 1}</div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      <div className="w-full absolute top-[27%] bg-gradient-to-r from-blue-500 opacity-70 dark:opacity-30 left-0 h-[500px] -skew-y-12"></div>
+      <div className="w-full absolute top-[27%] bg-gradient-to-r from-blue-500 opacity-70 dark:opacity-30 left-0 h-[500px] -skew-y-12" />
     </div>
   );
 }
