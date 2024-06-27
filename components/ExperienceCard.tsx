@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
 
 type Props = {
   clogo: string;
@@ -33,13 +33,16 @@ export default function ExperienceCard({
           alt=""
         />
         <div className="md:pl-4 pl-6 text-left">
-          <h4 className="md:text-xl text-lg font-medium md:font-semibold text-black dark:text-white">{title}</h4>
-          <p className="font-medium text-sm md:text-base md:pt-1 text-gray-800 dark:text-gray-300">{company}</p>
+          <h4 className="md:text-xl text-lg font-medium md:font-semibold text-black dark:text-white">
+            {title}
+          </h4>
+          <p className="font-medium text-sm md:text-base md:pt-1 text-gray-800 dark:text-gray-300">
+            {company}
+          </p>
         </div>
       </div>
 
       <div className="px-0 md:px-10 text-left mt-6">
-
         <p className="lowercase py-2 text-sm text-gray-800 dark:text-gray-400">
           {startDate} - {endDate}
         </p>

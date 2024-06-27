@@ -1,6 +1,4 @@
-// import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
-// register Swiper custom elements
 register();
 
 import { useRef, useState } from "react";
@@ -207,8 +205,6 @@ export default function Projects({ data }: Props) {
                   </div>
                 </div>
               </div>
-
-              <div>{i + 1}</div>
             </SwiperSlide>
           ))}
         </Swiper>

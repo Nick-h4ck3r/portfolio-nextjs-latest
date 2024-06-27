@@ -1,10 +1,9 @@
-import Link from "next/link";
 import React from "react";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
-import BackgroundCircles from "./BackgroundCircles";
+import Link from "next/link";
 import Image from "next/image";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-const buttonClasses = "heroButton"
+import BackgroundCircles from "./BackgroundCircles";
 
 type Props = {};
 
@@ -44,27 +43,27 @@ export default function Hero({}: Props) {
 
         <div className="pt-4 lg:pt-4 font-outfit px-4 md:px-0">
           <Link href="#about">
-            <button className={buttonClasses}>
+            <button className="heroButton">
               about
             </button>
           </Link>
           <Link href={"#experience"}>
-            <button className={buttonClasses}>
+            <button className="heroButton">
               experience
             </button>
           </Link>
           <Link href={"#skills"}>
-            <button className={buttonClasses}>
+            <button className="heroButton">
               skills
             </button>
           </Link>
           <Link href={"#projects"}>
-            <button className={buttonClasses}>
+            <button className="heroButton">
               projects
             </button>
           </Link>
           <Link href={"#blogs"}>
-            <button className={buttonClasses}>
+            <button className="heroButton">
               blogs
             </button>
           </Link>

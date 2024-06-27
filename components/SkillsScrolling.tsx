@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
+
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { STACKS } from "@/data/stacks";
 

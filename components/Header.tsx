@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 import DarkModeToggle from "./DarkModeToggle";
 
 type Props = {};
