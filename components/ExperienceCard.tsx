@@ -31,6 +31,7 @@ export default function ExperienceCard({
           src={clogo}
           className="object-cover h-10 w-10 rounded-full object-center xl:w-[55px] xl:h-[55px]"
           alt=""
+          loading="lazy"
         />
         <div className="md:pl-4 pl-6 text-left">
           <h4 className="md:text-xl text-lg font-medium md:font-semibold text-black dark:text-white">

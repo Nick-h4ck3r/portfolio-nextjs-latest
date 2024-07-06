@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import { BackgroundCircles } from "@/components/index";
+import heroImg from "public/extraImages/heroImage2.jpg"
 
 type Props = {};
 
@@ -24,13 +25,21 @@ export default function Hero({}: Props) {
     <div className="pt-16 md:pt-28 h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         className="relative h-32 w-32 rounded-full mx-auto object-cover"
-        src="/extraImages/heroImage2.jpg"
+        src={heroImg}
         alt="nikhil kadam profile image"
         priority={true}
+        loading="eager"
       />
+      {/* <img
+        src="/extraImages/heroImage2.jpg"
+        className="h-32 w-32 rounded-full object-cover"
+        alt=""
+        loading="eager"
+      /> */}
+
 
       <div className="z-20">
         <h2 className="text-sm text-gray-800 dark:text-gray-400 uppercase tracking-[8px] md:tracking-[15px] pb-2 font-outfit">

@@ -109,7 +109,8 @@ export default function Projects({ data }: Props) {
                   className="w-[300px] md:w-[400px] rounded-t-md object-contain cursor-grab"
                   src={project.imgurl}
                   alt=""
-                  priority={true}
+                  priority={false}
+                  loading="lazy"
                 />
 
                 <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit shadow-lg bg-slate-100/20 dark:bg-gray-700/30 backdrop-blur-sm md:text-left rounded-b-md space-y-4 cursor-grab">
@@ -198,8 +199,10 @@ export default function Projects({ data }: Props) {
                         width={20}
                         height={20}
                         src={tech.tech}
-                        alt=""
+                        alt="skills"
                         className="w-5 h-5 rounded-sm object-contain"
+                        priority={false}
+                        loading="lazy"
                       />
                     ))}
                   </div>

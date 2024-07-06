@@ -4,11 +4,9 @@ import { motion } from "framer-motion";
 export default function DarkModeToggle() {
   function applyThemeFromLocalStorage() {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    storedTheme === "dark"
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
   }
 
   // Apply the theme on app startup
@@ -40,7 +38,7 @@ export default function DarkModeToggle() {
   };
 
   return (
-    <button onClick={toggleDarkMode}>
+    <button name="changeTheme" onClick={toggleDarkMode}>
       {isDarkMode ? (
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
