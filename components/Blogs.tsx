@@ -1,11 +1,12 @@
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 export default function Blogs({}: Props) {
   const [posts, setPosts] = useState([]);
+
   const query = `query {
     publication(host: "nickk2305.hashnode.dev") {
       posts(first:4) {
@@ -21,7 +22,6 @@ export default function Blogs({}: Props) {
         }
       }
     }
-    
   }`;
 
   useEffect(() => {
@@ -40,7 +40,6 @@ export default function Blogs({}: Props) {
 
     const data = await response.json();
     setPosts(data.data.publication.posts.edges);
-    // console.log(data.data.user.publication.posts);
   };
 
   return (

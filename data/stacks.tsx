@@ -1,4 +1,3 @@
-// import { BsFillBootstrapFill, BsRobot } from 'react-icons/bs';
 import {
   SiBootstrap,
   SiCss3,

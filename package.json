@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.15",
     "@icons-pack/react-simple-icons": "^9.3.0",
     "@next/font": "13.1.6",
     "@tailwindcss/line-clamp": "^0.4.4",
@@ -17,6 +16,7 @@
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "@vercel/analytics": "^1.0.1",
+    "@vercel/speed-insights": "^1.0.12",
     "clsx": "^2.1.0",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
@@ -24,7 +24,6 @@
     "next": "^14.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.43.1",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
     "swiper": "^11.1.4",

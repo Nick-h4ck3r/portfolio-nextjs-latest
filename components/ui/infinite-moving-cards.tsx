@@ -1,8 +1,6 @@
 "use client";
 
-import { STACKS } from "@/data/stacks";
 import { cn } from "@/lib/utils/cn";
-import Image from "next/image";
 import React, { ReactNode, useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
