@@ -187,7 +187,7 @@ export default function Projects({ data }: Props) {
                     </span>
                   </div>
 
-                  <p className="text-sm font-normal dark:font-light md:text-base mt-3 text-gray-800 dark:text-gray-100">
+                  <p className="text-sm font-normal dark:font-light md:text-base mt-3 text-gray-800 dark:text-gray-100 line-clamp-4">
                     {project.content}
                   </p>
 

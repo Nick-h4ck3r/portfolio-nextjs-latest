@@ -52,12 +52,12 @@ export default function Home({ data }: any) {
         <Projects data={data.data} />
       </section>
 
-      {/* <section
+      <section
         id="blogs"
         className="snap-center"
       >
         <Blogs />
-      </section> */}
+      </section>
 
       <section
         id="contact"
