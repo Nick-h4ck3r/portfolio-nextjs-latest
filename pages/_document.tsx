@@ -45,7 +45,6 @@ export default function Document() {
       lang="en"
       className={""}
     >
-      <title>{metadata.title}</title>
       <Head>
         <meta charSet={metadata.charset} />
         <meta
