@@ -9,14 +9,14 @@ export const metadata = {
     "Nikhil Kadam, Full Stack Developer, Open Source, Tech Creator, Nashik, Maharashtra, India",
   author: "Nikhil Kadam",
   openGraph: {
-    url: "https://nikhilkadam.vercel.app",
+    url: "https://raw.githubusercontent.com/Nick-h4ck3r/portfolio-nextjs-latest/master/public/screenshots/portfolio/heroDemo.png",
     title: "Nikhil Kadam - Portfolio",
     description:
       "A website about Nikhil Kadam, full stack developer, open source enthusiast, and tech creator.",
     siteName: "Nikhil Kadam - Portfolio",
     images: [
       {
-        url: "https://nikhilkadam.vercel.app/images/profile.jpg",
+        url: "https://raw.githubusercontent.com/Nick-h4ck3r/portfolio-nextjs-latest/master/public/screenshots/portfolio/heroDemo.png",
         width: 800,
         height: 600,
       },
@@ -31,7 +31,7 @@ export const metadata = {
       "A website about Nikhil Kadam, full stack developer, open source enthusiast, and tech creator.",
     images: [
       {
-        url: "https://nikhilkadam.vercel.app/images/profile.jpg",
+        url: "https://raw.githubusercontent.com/Nick-h4ck3r/portfolio-nextjs-latest/master/public/screenshots/portfolio/heroDemo.png",
         width: 800,
         height: 600,
       },
