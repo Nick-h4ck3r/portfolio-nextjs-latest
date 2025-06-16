@@ -75,8 +75,8 @@ export default function About({}: Props) {
           specialize in scalable systems and full-stack development.
           <br />
           <br />
-          Previously, I've worked on AI-powered knowledge systems at Presto and
-          no-code AI platforms at Zeza Technologies.
+          Previously, I&apos;ve worked on AI-powered knowledge systems at Presto
+          and no-code AI platforms at Zeza Technologies.
           <br />
           <br />I am also the founder of{" "}
           <span className="text-blue-500 font-semibold">
@@ -112,8 +112,8 @@ export default function About({}: Props) {
             </a>
           </span>
           , a community of 3600+ developers.
-          <br /> <br /> When I'm not coding, I'm exploring tech psychology over
-          a{" "}
+          <br /> <br /> When I&apos;m not coding, I&apos;m exploring tech
+          psychology over a{" "}
           <span className="text-blue-500 font-semibold">
             fresh cup of coffee!
           </span>
