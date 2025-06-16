@@ -27,10 +27,14 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <ul className="flex justify-center my-3 space-x-4">
-          <li>
+          <motion.li
+            whileHover={{ scale: 1.1, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          >
             <Link
               href="#hero"
-              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 transition-colors duration-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,11 +46,15 @@ export default function Header({}: Props) {
                 <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
               </svg>
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          >
             <Link
               href="https://twitter.com/NickK2305"
-              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 transition-colors duration-200"
             >
               <svg
                 className="w-6 h-6"
@@ -57,11 +65,15 @@ export default function Header({}: Props) {
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
               </svg>
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          >
             <Link
               href="https://github.com/Nick-h4ck3r"
-              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 transition-colors duration-200"
             >
               <svg
                 className="w-6 h-6"
@@ -76,11 +88,15 @@ export default function Header({}: Props) {
                 ></path>
               </svg>
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          >
             <Link
               href="https://www.linkedin.com/in/nickk2305/"
-              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 transition-colors duration-200"
             >
               <svg
                 className="w-6 h-6"
@@ -91,10 +107,15 @@ export default function Header({}: Props) {
                 <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
               </svg>
             </Link>
-          </li>
-          <li className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            className="text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 transition-colors duration-200"
+          >
             <DarkModeToggle />
-          </li>
+          </motion.li>
         </ul>
       </motion.div>
 
@@ -115,10 +136,7 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-800 hover:text-gray-900 dark:hover:text-white dark:text-gray-400 cursor-pointer space-x-2 pt-2 xl:pt-0"
       >
-        <Link
-          href="#contact"
-          className="inline-flex items-center gap-2"
-        >
+        <Link href="#contact" className="inline-flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
