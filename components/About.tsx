@@ -53,11 +53,7 @@ export default function About({}: Props) {
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <path
-              stroke="none"
-              d="M0 0h24v24H0z"
-              fill="none"
-            ></path>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path
               d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z"
               strokeWidth="0"
@@ -73,10 +69,14 @@ export default function About({}: Props) {
           Welcome to my digital abode! <br />
           <br /> I am a{" "}
           <span className="text-blue-500 font-semibold">
-            full stack developer
+            Founding Engineer
           </span>{" "}
-          with a passion for building scalable and user-friendly web
-          applications. I love to create elegant solutions to complex problems.
+          at Roger (YC S24), building end-to-end SDR solutions powered by AI. I
+          specialize in scalable systems and full-stack development.
+          <br />
+          <br />
+          Previously, I've worked on AI-powered knowledge systems at Presto and
+          no-code AI platforms at Zeza Technologies.
           <br />
           <br />I am also the founder of{" "}
           <span className="text-blue-500 font-semibold">
@@ -111,10 +111,9 @@ export default function About({}: Props) {
               </span>
             </a>
           </span>
-          , a community dedicated to empowering aspiring developers.
-          <br /> <br /> Alongside my tech endeavors, I am an avid reader and
-          enjoy delving into subjects such as psychology and philosophy while
-          enjoying a{" "}
+          , a community of 3600+ developers.
+          <br /> <br /> When I'm not coding, I'm exploring tech psychology over
+          a{" "}
           <span className="text-blue-500 font-semibold">
             fresh cup of coffee!
           </span>

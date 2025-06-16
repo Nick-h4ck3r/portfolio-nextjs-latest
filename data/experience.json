@@ -1,6 +1,24 @@
 {
   "experience": [
     {
+      "clogo": "/companyLogo/roger-logo.png",
+      "title": "Founding Engineer",
+      "company": "Roger YC S24 (Prev: CardLift)",
+      "point1": "Led development of Roger's core system — an end-to-end SDR platform that automates lead discovery, enrichment, and multi-channel outreach using AI.",
+      "point2": "Built and scaled enrichment pipelines using Node.js, Typesense, and PostgreSQL to enable fast and accurate lead discovery and engagement.",
+      "startDate": "Oct, 2024",
+      "endDate": "Present"
+    },
+    {
+      "clogo": "/companyLogo/presto-logo.png",
+      "title": "Full-Stack Engineer Intern",
+      "company": "Presto (Prev: Permitech)",
+      "point1": "Built a custom rich text editor and contributed to Presto's core product — an AI assistant that answers team questions from docs, Slack, and internal tools.",
+      "point2": "Owned full-stack features using Next.js, Tailwind, and Node.js, focusing on document parsing, UI/UX, and backend infrastructure.",
+      "startDate": "July, 2024",
+      "endDate": "Oct, 2024"
+    },
+    {
       "clogo": "/companyLogo/zeza-logo.png",
       "title": "Frontend developer intern",
       "company": "at, zeza.tech",
