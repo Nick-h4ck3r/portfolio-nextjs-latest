@@ -21,7 +21,7 @@ export default function ExperienceCard({
   endDate,
 }: ExpCardProps) {
   return (
-    <article className="flex flex-col rounded-3xl rounded-l-none flex-shrink-0 snap-center backdrop-blur-sm font-outfit bg-surface-card border border-surface transition-transform duration-300 overflow-hidden md:py-14 py-10 md:mt-10 border-l-transparent hover:border-l-blue-500 dark:hover:border-l-blue-500 md:max-w-3xl max-w-xs md:px-0 px-5 select-none">
+    <article className="flex flex-col rounded-md rounded-l-none flex-shrink-0 snap-center backdrop-blur-sm font-outfit bg-surface-card border border-surface transition-transform duration-300 overflow-hidden md:py-14 py-10 md:mt-10 border-l-transparent hover:border-l-blue-500 dark:hover:border-l-blue-500 md:max-w-3xl max-w-xs md:px-0 px-5 select-none">
       <div className="flex items-center md:pl-10">
         <motion.img
           initial={{ opacity: 0, x: -5 }}
