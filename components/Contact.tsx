@@ -1,7 +1,6 @@
 type Props = {};
 
 export default function Contact({}: Props) {
-
   return (
     <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
       <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -9,7 +8,7 @@ export default function Contact({}: Props) {
       </h3>
 
       <div className="flex flex-col mt-14">
-        <h4 className="text-4xl font-semibold text-black dark:text-white text-center font-outfit">
+        <h4 className="text-4xl font-medium text-black dark:text-white text-center font-outfit">
           connect with me on{" "}
           <span className="underline decoration-blue-600">socials.</span>
         </h4>
@@ -38,7 +37,7 @@ export default function Contact({}: Props) {
             </span>
           </p>
           <p className="hover:text-black dark:hover:text-gray-300 duration-200">
-            <a href="https://nickk2305.hashnode.dev/">blog</a>
+            <a href="https://nickk2305.medium.com/">blog</a>
             <span className="inline-flex">
               <svg
                 className="with-icon_icon__MHUeb"

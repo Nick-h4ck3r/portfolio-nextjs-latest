@@ -5,6 +5,8 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import slugify from "@/lib/slugify";
 
 type Props = {
   data: Array<any>;
@@ -13,6 +15,7 @@ type Props = {
 export default function Projects({ data }: Props) {
   const swiperRef = useRef<any>(null);
   const [indexAt, setIndexAt] = useState(0);
+  const router = useRouter();
 
   const slideToPrev = () => {
     if (swiperRef.current) {
@@ -37,7 +40,7 @@ export default function Projects({ data }: Props) {
       <div className="absolute flex justify-between w-full z-40 pl-4 pr-2 md:max-w-2xl mt-16 md:mt-10 dark:text-white text-gray-800">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={`icon icon-tabler icon-tabler-square-rounded-chevron-left-filled h-8 w-8 md:w-14 md:h-14 cursor-pointer ${
+          className={`icon icon-tabler icon-tabler-square-rounded-chevron-left-filled h-8 w-8 md:w-14 md:h-14 cursor-pointer text-white dark:text-gray-800 ${
             indexAt == 0 ? "opacity-20 cursor-not-allowed" : "opacity-100"
           } `}
           width="24"
@@ -64,7 +67,7 @@ export default function Projects({ data }: Props) {
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={`icon icon-tabler icon-tabler-square-rounded-chevron-right-filled h-8 w-8 md:w-14 md:h-14 cursor-pointer ${
+          className={`icon icon-tabler icon-tabler-square-rounded-chevron-right-filled h-8 w-8 md:w-14 md:h-14 cursor-pointer text-white dark:text-gray-800 ${
             indexAt == 8 ? "opacity-20 cursor-not-allowed" : "opacity-100"
           }`}
           width="24"
@@ -97,119 +100,132 @@ export default function Projects({ data }: Props) {
           onSwiper={(swiper: any) => (swiperRef.current = swiper)}
           onSlideChange={() => setIndexAt(swiperRef.current.activeIndex)}
         >
-          {data.map((project: any, i: any) => (
-            <SwiperSlide key={i}>
-              <div
-                key={i}
-                className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-28"
-              >
-                <Image
-                  width={400}
-                  height={400}
-                  className="w-[300px] md:w-[400px] rounded-t-md object-contain cursor-grab"
-                  src={project.imgurl}
-                  alt=""
-                  priority={false}
-                  loading="lazy"
-                />
+          {data.map((project: any, i: any) => {
+            const slug = slugify(project.title);
+            return (
+              <SwiperSlide key={i}>
+                <div
+                  className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center p-10 md:p-44 h-screen mt-10 md:mt-28 group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-3xl"
+                  role="link"
+                  tabIndex={0}
+                  onClick={() => router.push(`/project/${slug}`)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      router.push(`/project/${slug}`);
+                    }
+                  }}
+                >
+                  <Image
+                    width={400}
+                    height={400}
+                    className="w-[300px] md:w-[400px] rounded-t-3xl object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                    src={project.imgurl}
+                      alt={`${project.title} preview`}
+                      priority={false}
+                      loading="lazy"
+                    />
 
-                <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit shadow-lg bg-slate-100/20 dark:bg-gray-700/30 backdrop-blur-sm md:text-left rounded-b-md space-y-4 cursor-grab">
-                  <h4 className="text-xl font-semibold md:text-2xl text-black dark:text-white">
-                    {project.title}
-                  </h4>
+                    <div className="px-8 w-[300px] md:w-[400px] py-7 font-outfit shadow-lg bg-surface-card border border-surface backdrop-blur-sm md:text-left rounded-b-3xl space-y-4">
+                      <h4 className="text-xl font-semibold md:text-2xl text-black dark:text-white">
+                        {project.title}
+                      </h4>
 
-                  <div className="text-xs font-light dark:font-extralight space-x-4 md:mt-0 text-gray-700 dark:text-gray-200">
-                    <span className="cursor-pointer underline">
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Github
-                      </a>
+                      <div className="text-xs font-light dark:font-extralight space-x-4 md:mt-0 text-gray-700 dark:text-gray-200">
+                        <span className="cursor-pointer underline">
+                          <a
+                            href={project.githubLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(event) => event.stopPropagation()}
+                          >
+                            Github
+                          </a>
 
-                      <span className="inline-flex">
-                        <svg
-                          className="with-icon_icon__MHUeb"
-                          data-testid="geist-icon"
-                          fill="none"
-                          height="24"
-                          shapeRendering="geometricPrecision"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          style={{
-                            color: "currentColor",
-                            width: "14px",
-                            height: "14px",
-                          }}
-                        >
-                          <path d="M7 17L17 7"></path>
-                          <path d="M7 7h10v10"></path>
-                        </svg>
-                      </span>
-                    </span>
+                          <span className="inline-flex">
+                            <svg
+                              className="with-icon_icon__MHUeb"
+                              data-testid="geist-icon"
+                              fill="none"
+                              height="24"
+                              shapeRendering="geometricPrecision"
+                              stroke="currentColor"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="1.5"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              style={{
+                                color: "currentColor",
+                                width: "14px",
+                                height: "14px",
+                              }}
+                            >
+                              <path d="M7 17L17 7"></path>
+                              <path d="M7 7h10v10"></path>
+                            </svg>
+                          </span>
+                        </span>
 
-                    <span className="cursor-pointer underline">
-                      <a
-                        href={project.deployedLink}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Live
-                      </a>
-                      <span className="inline-flex">
-                        <svg
-                          className="with-icon_icon__MHUeb"
-                          data-testid="geist-icon"
-                          fill="none"
-                          height="24"
-                          shapeRendering="geometricPrecision"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          style={{
-                            color: "currentColor",
-                            width: "14px",
-                            height: "14px",
-                          }}
-                        >
-                          <path d="M7 17L17 7"></path>
-                          <path d="M7 7h10v10"></path>
-                        </svg>
-                      </span>
-                    </span>
-                  </div>
+                        <span className="cursor-pointer underline">
+                          <a
+                            href={project.deployedLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(event) => event.stopPropagation()}
+                          >
+                            Live
+                          </a>
+                          <span className="inline-flex">
+                            <svg
+                              className="with-icon_icon__MHUeb"
+                              data-testid="geist-icon"
+                              fill="none"
+                              height="24"
+                              shapeRendering="geometricPrecision"
+                              stroke="currentColor"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="1.5"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              style={{
+                                color: "currentColor",
+                                width: "14px",
+                                height: "14px",
+                              }}
+                            >
+                              <path d="M7 17L17 7"></path>
+                              <path d="M7 7h10v10"></path>
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
 
-                  <p className="text-sm font-normal dark:font-light md:text-base mt-3 text-gray-800 dark:text-gray-100 line-clamp-4">
-                    {project.content}
-                  </p>
+                      <p className="text-sm font-normal dark:font-light md:text-base mt-3 text-gray-800 dark:text-gray-100 line-clamp-4">
+                        {project.content}
+                      </p>
 
-                  <div className="flex gap-2 mt-2 font-normal dark:font-light text-sm items-center text-gray-700 dark:text-gray-400">
-                    <span>tech stack used:</span>
-                    {project.tech?.map((tech: any, i: any) => (
-                      <Image
-                        key={i}
-                        width={20}
-                        height={20}
-                        src={tech.tech}
-                        alt="skills"
-                        className="w-5 h-5 rounded-sm object-contain"
-                        priority={false}
-                        loading="lazy"
-                      />
-                    ))}
-                  </div>
+                      <div className="flex gap-2 mt-2 font-normal dark:font-light text-sm items-center text-gray-700 dark:text-gray-400">
+                        <span>tech stack used:</span>
+                        {project.tech?.map((tech: any, i: any) => (
+                          <Image
+                            key={i}
+                            width={20}
+                            height={20}
+                            src={tech.tech}
+                            alt="skills"
+                            className="w-5 h-5 rounded-sm object-contain"
+                            priority={false}
+                            loading="lazy"
+                          />
+                        ))}
+                      </div>
+                    </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
 

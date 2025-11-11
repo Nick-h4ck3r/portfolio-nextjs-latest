@@ -5,6 +5,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --surface-card: rgba(255, 255, 255, 0.35);
+    --surface-card-strong: rgba(255, 255, 255, 0.5);
+    --surface-pill: rgba(255, 255, 255, 0.45);
+    --surface-border: rgba(148, 163, 184, 0.25);
+  }
+
+  .dark {
+    --surface-card: rgba(148, 163, 184, 0.08);
+    --surface-card-strong: rgba(148, 163, 184, 0.16);
+    --surface-pill: rgba(148, 163, 184, 0.18);
+    --surface-border: rgba(148, 163, 184, 0.2);
+  }
+}
 
 @layer components {
   .heroButton {
@@ -15,6 +34,24 @@
   }
   .contactButton {
     @apply bg-transparent text-gray-400 border border-[#454545] font-bold py-2 px-5 rounded-md hover:text-white hover:border-[white] hover:duration-1000;
+  }
+}
+
+@layer utilities {
+  .bg-surface-card {
+    background-color: var(--surface-card);
+  }
+
+  .bg-surface-card-strong {
+    background-color: var(--surface-card-strong);
+  }
+
+  .bg-surface-pill {
+    background-color: var(--surface-pill);
+  }
+
+  .border-surface {
+    border-color: var(--surface-border);
   }
 }
 

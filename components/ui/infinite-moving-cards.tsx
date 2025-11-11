@@ -89,7 +89,7 @@ export const InfiniteMovingCards = ({
         {skills.map(([title, icon], index) => (
           <div
             key={index}
-            className="flex items-center gap-2 mr-3 rounded-full py-2 px-5 w-max bg-neutral-50 dark:bg-neutral-800 text-black dark:text-neutral-50 shadow-sm border border-neutral-300 dark:border-neutral-700 font-outfit"
+            className="flex items-center gap-2 mr-3 rounded-full py-2 px-5 w-max bg-surface-pill border border-surface text-black dark:text-neutral-50 shadow-sm font-outfit"
           >
             {icon}
             <span>{title}</span>
